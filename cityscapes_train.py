@@ -33,6 +33,7 @@ def val(args, val_loader, model, criterion):
     return: IoU class, and mean IoU
     """
     #evaluation mode
+    #
     model.eval()
     total_batches = len(val_loader)
    
