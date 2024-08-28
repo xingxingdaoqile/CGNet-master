@@ -132,7 +132,7 @@ if __name__ == '__main__':
 
     parser = ArgumentParser()
     parser.add_argument('--model', default = "CGNet", help = "model name: Context Guided Network (CGNet")
-    parser.add_argument('--data_dir', default = "/home/wty/AllDataSet/Cityscapes", help = "data directory")
+    parser.add_argument('--data_dir', default = "/kaggle/working/CGNet-master/dataset/list/Cityscapes", help = "data directory")
     parser.add_argument('--dataset_list', default = "cityscapes_trainval_list.txt",
                         help = "train and val data, for computing the ratio of all classes, mean and std")
     parser.add_argument('--val_data_list', default = "./dataset/list/Cityscapes/cityscapes_val_list.txt", help = "val set")

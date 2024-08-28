@@ -33,7 +33,6 @@ def val(args, val_loader, model, criterion):
     return: IoU class, and mean IoU
     """
     #evaluation mode
-    #
     model.eval()
     total_batches = len(val_loader)
    
@@ -253,7 +252,7 @@ if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('--model', default = "CGNet", help = "model name: Context Guided Network (CGNet)")
     parser.add_argument('--dataset', default = "cityscapes", help = "dataset: cityscapes or camvid")
-    parser.add_argument('--data_dir', default = "/home/wty/AllDataSet/Cityscapes", help ='data directory')
+    parser.add_argument('--data_dir', default = "/kaggle/working/CGNet-master/dataset/list/Cityscapes", help ='data directory')
     parser.add_argument('--dataset_list', default = "cityscapes_trainval_list.txt",
                         help = "train and val data, for computing the ration of all kinds, mean and std")
     parser.add_argument('--train_data_list', default = "./dataset/list/Cityscapes/cityscapes_trainval_list.txt", help = "train set")
